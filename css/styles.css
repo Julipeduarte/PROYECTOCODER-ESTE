@@ -1,0 +1,532 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-brand{
+  font-family: "Shadows Into Light", "cursive";
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-link{
+  font-size: 1rem;
+  font-size: 1.05rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-link:hover{
+  transform: scale(1.05);
+}
+
+main h1 {
+  height: 70px;
+  
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color:#ebb6ba;
+  text-shadow: 2px 2px 2px white;
+}
+
+.p-index {
+  width: 300px;
+  height: 400px;
+  margin-top: 65px;
+  margin-bottom: 60px;
+  margin-left: 20px;
+  text-align: center;
+  font-family: "Shadows Into Light", "cursive";
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.img-index {
+  margin: 20px;
+  filter: drop-shadow(5px 5px 5px); 
+}
+
+
+.img-y-p-index{
+  height:600px ;
+
+  margin: 15px 45px 60px 45px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.subtitulo-index{
+  font-family: "Shadows Into Light", "cursive";
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 3px 3px 3px solid gray;
+  background-color:#ebb6ba;
+}
+
+
+.sobremi-contenedor{
+margin: 20px;
+background-color:#977174;
+height: 400px;
+display: flex;
+}
+
+.sobremi-parrafo{
+  margin: 10px;
+  color: whitesmoke;
+  padding-top:20px;
+  display: grid;
+  font-size: 1.3rem;
+  
+}
+
+.juli{
+  font-family:"Shadows Into Light", "cursive";
+  font-size: 1.8rem;
+}
+
+.juli::after{
+  content:" ♡"
+}
+
+.juli::before{
+  content:"♡ "
+}
+
+.subtitulos-main {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 4px;
+}
+
+.newsyredes{
+  font-family:"Shadows Into Light", "cursive"; ;
+}
+
+.healthy{
+  background-color: #977174;
+  margin: 15px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  height: 50px;
+  border-radius: 40px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.shadows{
+  text-shadow: 2px 2px 2px black;
+}
+
+main{
+  justify-content: center;
+  text-align: center;
+}
+
+.prebioticos-contenedor {
+  height: 150vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.imgs-prebioticos{
+  border-radius: 50px;
+}
+
+.imgs-prebioticos:hover{
+  box-shadow: 2px 2px 3px rgb(68, 66, 66);
+  animation-name: img-movimiento;
+        animation-iteration-count:infinite;
+        animation-duration: 1.5s;
+        animation-direction:alternate-reverse;
+    }
+
+    @keyframes img-movimiento {
+        to{
+            transform: scale(0.95);
+        }
+
+        from{
+            transform: scale(1.1);
+        }
+    }
+
+.contenido-contenedor {
+  display: grid;
+  justify-content: center;
+  text-align:justify;
+  margin: 30px;
+  font-size: 1.1rem; 
+}
+
+.imgs-healthy{
+  box-shadow: 5px 5px 5px black;
+  border-radius: 40px;
+  margin: 10px;
+}
+
+.healthy-contenedor{
+  width: 1200px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align:justify;
+  padding: 10px;
+}
+
+.puntosesenciales{
+  font-weight: bold;
+  background-color:#977174;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  border-radius: 40px;
+  height: 80px;
+  box-shadow: 2px 2px 2px black;
+  margin: 25px;
+  padding-top: 20px;
+}
+.mindfuleating-contenedor{
+  height: 190vh;
+  width: 1000px;
+  margin: 25px;
+  margin-left: 180px;
+}
+.hijosmind{
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  box-shadow: 2px 2px 2px black;
+  height: 80px;
+  padding: 10px;
+  text-align: center;
+}
+.hijosmind:hover{
+  transform: scale(0.95);
+}
+.one{
+  background-color: #e5c1c4;
+  margin: 20px;
+  justify-content: center;
+}
+.two {
+  background-color: #eddbdc;
+  margin: 20px;
+  justify-content: center;
+}
+.three{
+  background-color: #f9eeef;
+  margin: 20px;
+  justify-content: center;
+}
+
+.contenidorecetas-contenedor{
+  margin: 20px;
+  padding: 20px;
+  text-align:justify;
+  justify-content: center;
+  justify-items: center;
+
+}
+ul li {
+  list-style: none;
+}
+
+
+.carousel-contenedor {
+  height: 400px;
+  display: grid;
+  justify-content: center;
+  margin: 40px;
+}
+.newsyredes-contenedor {
+  height: 300px;
+  display: block;
+  display: flex;
+  justify-content:space-between;
+  margin: 70px;
+  padding: 5px;
+}
+.workshops{
+margin: 20px;
+background-color:#977174;
+height: 400px;
+display: flex;
+}
+.parrafos-works{
+  margin: 10px;
+  padding: 30px;
+  color: whitesmoke;
+  display: grid;
+  font-size: 1.3rem;
+}
+
+.imgs-works:hover{
+   transform: scale(0.95);
+        }
+
+
+
+
+.newsletter-index {
+  background-color: #ebb6ba;
+  filter: drop-shadow(5px 5px 5px gray);
+  width: 800px;
+  margin: 20px;
+  padding: 20px;
+  height: 240px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.redsocial-index {
+  height: 240px;
+  width: 250px;
+  margin: 20px;
+  padding: 25px;
+}
+
+.newsletter-contenedor {
+  background-color: #ebb6ba;
+  filter: drop-shadow(5px 5px 5px gray);
+  width: 700px;
+  margin: 20px;
+  padding: 20px;
+  height: 240px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-contenedor:hover {
+  transform: scale(0.95);
+}
+
+.titulonews {
+  font-family: "Shadows Into Light", "cursive";
+}
+
+.redsocial-contenedor {
+  height: 240px;
+  width: 250px;
+  margin: 20px;
+  padding: 25px;
+}
+
+.logos:hover {
+  transform: scale(0.9);
+}
+.uno {
+  margin-top: 10px;
+  margin: 1px;
+  padding: 8px;
+}
+.dos {
+  margin: 1px;
+  padding: 1px;
+}
+
+.contacto-contenedor {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+.contenedor-responsive{
+  width: 100%;
+}
+
+.formulario{
+  background-color:#e5c1c4;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px black;
+  height: 40px;
+  padding-top: 5px;
+  font-weight: bold;
+  border-color: black;
+}
+
+.text-area{
+  border-radius:30px ;
+  padding: 15px;
+  background-color:#e5c1c4;
+ box-shadow: 2px 2px 5px black;
+ margin-bottom: 10px;
+} 
+
+.input-enviar{
+  padding: 5px;
+  border-radius: 30px;
+  background-color: #e5c1c4;
+  height: 45px;
+  width: 80px;
+  box-shadow: 2px 2px 5px black;
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  box-sizing: border-box;
+  background-color: #d1a1a5;
+  font-weight: bold;
+}
+
+  @media screen and(min-width:412){
+
+main h1{
+  display: none;
+}
+
+.contacto-contenedor{
+  width: 50%;
+}
+    .subtitulos-main{
+      font-size: 0.5rem;
+    }
+
+
+  .newsyredes-contenedor{
+    display: none;
+  }
+
+footer{
+  display: none;
+}
+}
+  
+@media screen and(max-width:800){
+
+  .contenedor-responsive{
+    width: 10%;
+  }
+
+
+footer{
+  display: none;
+}
+}
+
+
+@media screen and (min-width: 1200px) {
+  .img-index:hover{
+    animation-name: img-movimiento;
+          animation-iteration-count: infinite;
+          animation-duration: 2s;
+          animation-direction:alternate-reverse;
+      }
+  
+      @keyframes img-movimiento {
+          to{
+              transform: scale(1);
+          }
+  
+          from{
+              transform: scale(1.04);
+          }
+      }
+  
+  .crackers {
+    margin-left: 5px;
+    margin-right: 20px;
+  }
+  
+  .granola{
+ margin-left: 5px;
+ margin-right: 20px;
+ margin-top: 45px;
+  }
+  .lentejas{
+    margin-left: 5px;
+    margin-right: 20px;
+  }
+  .pestokale{
+    margin-left: 5px;
+    margin-right: 20px;
+    margin-top: 25px;
+  }
+  .contenidorecetas-contenedor{
+    margin: 20px;
+    padding: 10px;
+    text-align:justify;
+    justify-content: center;
+    justify-items: center;
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 3fr 3fr 3fr;
+    grid-template-areas: 
+    "crackers img-crackers"
+    "granola img-granola"
+    "lentejas img-lentejas"
+    "pestokale img-pestokale"
+    ;
+  }
+  
+  .crackers{
+    grid-area: crackers ;
+  }
+  
+  .granola{
+    grid-area: granola;
+  }
+  
+  .lentejas{
+    grid-area: lentejas;
+  }
+  
+  .pestokale{
+    grid-area: pestokale;
+  }
+
+  .img-crackers{
+    margin-top: 10px;
+    filter: drop-shadow(5px 5px 5px);
+    }
+  
+    .img-granola{
+      margin-top: 10px;
+      filter: drop-shadow(5px 5px 5px);
+    }
+  
+    .img-lentejas{
+      margin-top: 10px;
+      filter: drop-shadow(5px 5px 5px);
+    }
+  
+    .img-pestokale{
+      margin-top: 10px;
+      filter: drop-shadow(5px 5px 5px);
+    }
+
+    .recetas:hover{
+      transform: scale(0.95);
+    }
+
+    .workshops{
+      box-shadow: 2px 2px 5px black;
+    }
+  
+    .newsletter-index:hover {
+    transform: scale(0.95);
+  }
+  
+  }
+
+
+
+
+  
+
