@@ -1,0 +1,619 @@
+@import "variables.scss";
+@import "mixin.scss";
+@import "extend.scss";
+
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+
+  /*estilos en común del proyecto*/
+
+header{
+    .navbar-brand{
+      font-family: "Shadows Into Light", "cursive";
+      font-size: 1.3rem;
+      font-weight: bold;
+    .nav-link{
+        font-size: 1rem;
+        font-size: 1.05rem;
+        font-family: "Open Sans", sans-serif;
+    .nav-link:hover{
+          transform: scale(1.05);
+      }
+    }
+  } 
+}
+main{ 
+  h1{
+  height: 4.4rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
+  background-color: $color-uno;
+  text-shadow: 5px 5px 5px $color-cinco;}
+
+  h3{
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 4px;
+    font-family:"Shadows Into Light", "cursive";
+  }
+  .newsyredes-contenedor {
+    background-color:$color-cuatro;
+    height: 21rem;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 3rem;
+    padding: 0.5rem;
+    .newsletter-contenedor {
+      background-color: $color-uno;
+      filter: drop-shadow(5px 5px 5px $color-seis);
+      @include medidas (46rem , 15rem);
+      margin-bottom: 0.5rem;
+      margin-top: 2.2rem;
+      padding: 1rem;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      border-color: $color-seis;
+      }
+      .newsletter-contenedor:hover {
+        transform: scale(0.95);
+      }
+      .redsocial-contenedor {
+        @include medidas (15rem , 15rem);
+        margin: 1.5rem 1rem 1.5rem 1rem;
+        padding: 1.5rem;
+      }
+      .logos{
+        margin: 0.4rem;
+      }
+      .logos:hover {
+        transform: scale(0.9);
+      }
+  }
+ }
+
+footer {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+  box-sizing: border-box;
+  background-color: $color-dos;
+  font-weight: bold;
+}
+
+/*estilos del index*/
+
+main{
+
+.img-y-p-index{
+  height:37rem ;
+  margin: 1rem 3rem 4rem 3rem;
+  display: flex;
+  justify-content: center;
+  .img-index {
+    margin: 1.2rem;
+    filter: drop-shadow(5px 5px 5px); 
+  }
+  .p-index {
+    width: 19rem;
+    height: $medida-principal;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 1.2rem;
+    text-align: center;
+    font-family: "Shadows Into Light", "cursive";
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+}
+  .subtitulo-index{
+  font-family: "Shadows Into Light", "cursive";
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  background-color:$color-dos;
+}
+.sobremi-contenedor{
+margin: 1rem;
+background-color:$color-tres;
+height: $medida-principal;
+display: flex;
+.sobremi-parrafo{
+  margin: 0.6rem;
+  color: $color-cinco;
+  padding-top:  1rem;;
+  display: grid;
+  font-size: 1.3rem; 
+}
+.juli{
+  font-family:"Shadows Into Light", "cursive";
+  font-size: 1.8rem;
+}
+.juli::after{
+  content:" ♡"
+}
+.juli::before{
+  content:"♡ "
+}
+}
+}
+/*estilos page-1*/
+main{
+  justify-content: center;
+  text-align: center;
+  .healthy{
+    background-color: $color-tres;
+    margin: 1rem;
+    padding-top: 0.5rem;
+    color: $color-cinco;
+    text-shadow: 2px 2px 2px $color-seis;
+    height: 3rem;
+    border-radius: 2.5rem;
+    box-shadow: 2px 2px 5px $color-seis;
+  }
+  .contenido-contenedor {
+    display: grid;
+    justify-content: center;
+    text-align:justify;
+    margin: 2rem;
+    font-size: 1.1rem;}
+
+ .imgs-healthy{
+  box-shadow: 5px 5px 5px $color-seis;
+  border-radius: 2.5rem;
+  margin: 1rem;
+  }
+  
+  .healthy-contenedor{
+  @include medidas (75rem , 55rem);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align:justify;
+  padding: 1rem;
+  }
+  .mindfuleating-contenedor{
+    justify-content: center;
+    height: 140vh;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    .puntosesenciales{
+      font-weight: bold;
+      background-color:$color-tres;
+      color: $color-cinco;
+      text-shadow: 2px 2px 2px $color-seis;
+      text-align: center;
+      border-radius: 2.5rem;
+      height: 3rem;
+      box-shadow: 2px 2px 2px $color-seis;
+      margin: 1rem;
+      }
+    .hijosmind{
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 2.5rem;
+      box-shadow: 2px 2px 2px $color-seis;
+      height: 4rem;
+      padding: 0.6rem;
+      text-align: center;
+    }
+    .hijosmind:hover{
+      transform: scale(1.1);
+    }
+    .one{
+      background-color: $color-cuatro;
+      @extend %estilosMindful ;
+    }
+    .two {
+      background-color: $color-uno;
+      @extend %estilosMindful ;
+    }
+  }
+  .prebioticos-contenedor {
+  height: 150vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  .imgs-prebioticos{
+    border-radius: 3rem;
+  }
+  .imgs-prebioticos:hover{
+    box-shadow: 2px 2px 3px rgb(68, 66, 66);
+    animation-name: img-movimiento;
+          animation-iteration-count:infinite;
+          animation-duration: 1.5s;
+          animation-direction:alternate-reverse;
+      }
+  @keyframes img-movimiento {
+        to{
+            transform: scale(0.95);
+        }
+  
+        from{
+            transform: scale(1.2);
+        }
+    }
+}
+}
+
+/*estilos page-2*/
+main{
+  .subtitulos main
+   .recets{
+    font-weight: bold;
+  }
+.contenidorecetas-contenedor{
+  margin: 1.5rem;
+  padding-top: 1.5rem;
+  text-align:justify;
+  justify-content: center;
+  justify-items: center;
+  ul li {
+    list-style: none;
+  }
+}
+section{
+  .carousel-contenedor {
+    height: $medida-principal;
+    display: grid;
+    justify-content: center;
+    margin: 2.5rem;
+  }
+}
+}
+
+/*estilos page-3*/
+main{
+.workshops{
+  margin: 1rem;
+  background-color:$color-tres;
+  height: $medida-principal;
+  display: flex;
+  box-shadow: 2px 2px 5px $color-seis;
+  .parrafos-works{
+    margin: 1rem;
+    padding: 2rem;
+    color: $color-cinco;
+    display: grid;
+    font-size: 1.3rem;
+    .shadows{
+      text-shadow: 2px 2px 2px $color-seis;
+    }
+    .imgs-works:hover{
+      transform: scale(0.95);
+           }
+  }
+  }
+}
+   
+/*estilos page-4*/
+
+main{
+.contacto-contenedor {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem;
+  .formulario{
+    background-color:$color-cuatro;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 5px $color-seis;
+    height: 2.5rem;
+    padding-top: 0.5rem;
+    font-weight: bold;
+    border-color: $color-seis;
+  }
+  .text-area{
+    border-radius:2rem ;
+    padding: 1rem;
+    background-color:$color-cuatro;
+    box-shadow: 2px 2px 5px $color-seis;
+    margin-bottom: 1rem;
+  } 
+  .input-enviar{
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background-color: $color-cuatro;
+    @include medidas (5rem, 3rem);
+    box-shadow: 2px 2px 5px $color-seis;
+    font-weight: bold;
+  }  
+}
+}
+
+@media screen and(max-width:412px){
+
+h1{
+  display: none;
+}
+.subtitulo-index{
+  display: none;
+}
+.img-y-p-index{
+  display: flex;
+  flex-direction: column;
+}
+
+.p-index{
+  width: 300px;
+  height: 200px;
+  font-size: 0.8rem;
+}
+.sobremi-contenedor{
+  display:flex;
+  flex-direction: column;
+}
+.img-juli{
+  width: 300px;
+}
+
+.newsletter-contenedor{
+  height: 200px;
+}
+.prebioticos-contenedor {
+  height: 150vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+  .imgs-healthy{
+    width: 75%;
+  }
+  footer{
+    display: none;
+  }
+  }
+    
+  
+@media screen and(max-width:800px){
+
+  p{
+    font-size: 0.85rem;    
+  }
+  
+  .p-index{
+    width:50%;
+  }
+
+  .img-index{
+    width: 50%;
+    height: auto;
+  }
+
+  .redsocial-contenedor{
+    display: none;
+  }
+
+  .imgs-healthy{
+   height: 16rem;
+  }
+
+  .contenido-contenedor{
+    margin-top: 20rem;
+  }
+  .hijosmind{
+    font-size: 0.85rem;
+  }
+
+
+  .imgs-prebioticos{
+    height: 16rem;
+  }
+
+  .imgs-prebioticos:hover{
+    box-shadow: 2px 2px 3px rgb(68, 66, 66);
+    animation-name: img-movimiento;
+          animation-iteration-count:infinite;
+          animation-duration: 1.5s;
+          animation-direction:alternate-reverse;
+      }
+  @keyframes img-movimiento {
+        to{
+            transform: scale(0.95);
+        }
+  
+        from{
+            transform: scale(1.1);
+        }
+  }
+  
+  .healthy {
+    font-size: 1.5rem;
+  }
+
+  ul li{
+    font-size: 0.85rem;
+  }
+
+ .img-crackers{
+  margin-left: 8rem;
+  width: 32rem;
+ }
+ .img-granola{
+  margin-left: 8rem;
+  width: 32rem;
+ }
+ .img-lentejas{
+  margin-left: 8rem;
+  width: 32rem;
+ }
+ .img-pestokale{
+  margin-left: 8rem;
+  width: 32rem;
+ }
+ .crackers{
+  margin-left: 8rem;
+  margin-right: 7rem;
+ }
+ .granola{
+  margin-left: 8rem;
+  margin-right: 7rem;
+ }
+ .lentejas{
+  margin-left: 8rem;
+  margin-right: 7rem;
+ }
+.pestokale{
+  margin-left: 8rem;
+  margin-right: 7rem;
+}
+  
+footer{
+    display: none;
+  }
+}
+
+  @media screen and (min-width: 1200px) {
+
+    
+    .img-index:hover{
+      animation-name: img-movimiento;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-direction:alternate-reverse;
+        }
+    
+        @keyframes img-movimiento {
+            to{
+                transform: scale(1);
+            }
+    
+            from{
+                transform: scale(1.04);
+            }
+        }
+    
+    .crackers {
+      margin-left: 0.5rem;
+      margin-right: 1rem;
+    }
+    
+    .granola{
+   margin-left: 0.5rem;
+   margin-right: 1rem;
+   margin-top: 4rem;
+    }
+    .lentejas{
+      margin-left: 0.5rem;
+      margin-right: 1rem;
+    }
+    .pestokale{
+      margin-left: 0.5rem;
+      margin-right: 1rem;
+      margin-top: 1.5rem;
+    }
+    .contenidorecetas-contenedor{
+      margin: 1rem;
+      padding-top: 0.5rem;
+      text-align:justify;
+      justify-content: center;
+      justify-items: center;
+      font-size: 1rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 3fr 3fr 3fr 3fr;
+      grid-template-areas: 
+      "crackers img-crackers"
+      "granola img-granola"
+      "lentejas img-lentejas"
+      "pestokale img-pestokale"
+      ;
+    }
+    
+    .crackers{
+      grid-area: crackers ;
+      width: 40rem;
+      margin-right: 1.5rem;
+    }
+    
+    .granola{
+      grid-area: granola;
+      width: 40rem;
+      margin-right: 1.5em;
+    }
+    
+    .lentejas{
+      grid-area: lentejas;
+      width: 40rem;
+      margin-right: 2rem;
+    }
+    
+    .pestokale{
+      grid-area: pestokale;
+      width: 40rem;
+      margin-right: 2rem;
+    }
+  
+    .img-crackers{
+      margin-top: 1rem;
+      filter: drop-shadow(5px 5px 5px);
+      }
+    
+      .img-granola{
+        margin-top: 1rem;
+        filter: drop-shadow(5px 5px 5px);
+      }
+    
+      .img-lentejas{
+        margin-top: 1rem;
+        filter: drop-shadow(5px 5px 5px);
+      }
+    
+      .img-pestokale{
+        margin-top: 1rem;
+        filter: drop-shadow(5px 5px 5px);
+      }
+  
+      .recetas:hover{
+        transform: scale(0.95);
+      }
+  
+      .workshops{
+        box-shadow: 2px 2px 5px black;
+      }
+    
+      .newsletter-index:hover {
+      transform: scale(0.95);
+    }
+
+    .imgs-works:hover{
+      transform: scale(0.95);
+    }
+    
+  }
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
