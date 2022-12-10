@@ -1,6 +1,6 @@
 @charset "UTF-8";
-main .mindfuleating-contenedor .one, main .mindfuleating-contenedor .two {
-  margin: 1rem;
+main .contenido-contenedor, main .healthy-contenedor, main .contenidorecetas-contenedor {
+  text-align: justify;
   justify-content: center; }
 
 * {
@@ -10,31 +10,32 @@ main .mindfuleating-contenedor .one, main .mindfuleating-contenedor .two {
   box-sizing: border-box; }
 
 /*estilos en común del proyecto*/
-header .navbar-brand {
-  font-family: "Shadows Into Light", "cursive";
-  font-size: 1.3rem;
-  font-weight: bold; }
-  header .navbar-brand .nav-link {
-    font-size: 1rem;
-    font-size: 1.05rem;
-    font-family: "Open Sans", sans-serif; }
-    header .navbar-brand .nav-link .nav-link:hover {
-      transform: scale(1.05); }
+header {
+  background-color: #d1a1a5; }
+  header .navbar-brand {
+    font-family: "Shadows Into Light", "cursive";
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #d1a1a5; }
+  header .nav-link {
+    font-weight: bold;
+    background-color: #d1a1a5; }
+  header .nav-link:hover {
+    transform: scale(1.05); }
 
 main h1 {
-  height: 4.4rem;
+  height: 4rem;
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  padding-top: 0.5rem;
-  background-color: #ebb6ba;
+  background-color: #e5c1c4;
   text-shadow: 5px 5px 5px whitesmoke; }
 
 main h3 {
   font-size: 2.2rem;
   text-align: center;
   font-weight: bolder;
-  padding-top: 4px;
+  padding-top: 0.3rem;
   font-family: "Shadows Into Light", "cursive"; }
 
 main .newsyredes-contenedor {
@@ -113,7 +114,7 @@ main .sobremi-contenedor {
   main .sobremi-contenedor .sobremi-parrafo {
     margin: 0.6rem;
     color: whitesmoke;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     display: grid;
     font-size: 1.3rem; }
   main .sobremi-contenedor .juli {
@@ -131,7 +132,7 @@ main {
   main .healthy {
     background-color: #977174;
     margin: 1rem;
-    padding-top: 0.5rem;
+    padding-top: 0.4rem;
     color: whitesmoke;
     text-shadow: 2px 2px 2px black;
     height: 3rem;
@@ -139,8 +140,6 @@ main {
     box-shadow: 2px 2px 5px black; }
   main .contenido-contenedor {
     display: grid;
-    justify-content: center;
-    text-align: justify;
     margin: 2rem;
     font-size: 1.1rem; }
   main .imgs-healthy {
@@ -151,39 +150,19 @@ main {
     width: 75rem;
     height: 55rem;
     display: flex;
-    justify-content: center;
     justify-items: center;
-    text-align: justify;
     padding: 1rem; }
-  main .mindfuleating-contenedor {
-    justify-content: center;
-    height: 140vh;
-    margin-left: 3rem;
-    margin-right: 3rem; }
-    main .mindfuleating-contenedor .puntosesenciales {
-      font-weight: bold;
-      background-color: #977174;
-      color: whitesmoke;
-      text-shadow: 2px 2px 2px black;
-      text-align: center;
-      border-radius: 2.5rem;
-      height: 3rem;
-      box-shadow: 2px 2px 2px black;
-      margin: 1rem; }
-    main .mindfuleating-contenedor .hijosmind {
-      font-weight: bold;
-      font-size: 1.1rem;
-      border-radius: 2.5rem;
-      box-shadow: 2px 2px 2px black;
-      height: 4rem;
-      padding: 0.6rem;
-      text-align: center; }
-    main .mindfuleating-contenedor .hijosmind:hover {
-      transform: scale(1.1); }
-    main .mindfuleating-contenedor .one {
-      background-color: #e5c1c4; }
-    main .mindfuleating-contenedor .two {
-      background-color: #ebb6ba; }
+  main .puntosesenciales {
+    font-weight: bold;
+    padding-top: 0.5rem;
+    background-color: #977174;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    border-radius: 2.5rem;
+    height: 3rem;
+    box-shadow: 2px 2px 2px black;
+    margin: 1rem; }
   main .prebioticos-contenedor {
     height: 150vh;
     display: grid;
@@ -212,8 +191,6 @@ main .subtitulos main .recets {
 main .contenidorecetas-contenedor {
   margin: 1.5rem;
   padding-top: 1.5rem;
-  text-align: justify;
-  justify-content: center;
   justify-items: center; }
   main .contenidorecetas-contenedor ul li {
     list-style: none; }
@@ -279,28 +256,36 @@ main .contacto-contenedor {
     display: none; }
   .img-y-p-index {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    font-size: 0.5rem; }
   .p-index {
     width: 300px;
-    height: 200px;
-    font-size: 0.8rem; }
-  .sobremi-contenedor {
-    display: flex;
-    flex-direction: column; }
+    height: 200px; }
   .img-juli {
-    width: 300px; }
+    display: none; }
   .newsletter-contenedor {
     height: 200px; }
-  .prebioticos-contenedor {
-    height: 150vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center; }
   .imgs-healthy {
     width: 75%; }
-  footer {
-    display: none; } }
+  .healthy {
+    font-size: 0.5rem; }
+  .mindfuleating-contenedor {
+    display: none; }
+  .prebioticos-contenedor {
+    display: flex; }
+  .img-index {
+    width: 50%; }
+  .contenidorecetas-contenedor {
+    display: flex;
+    flex-wrap: wrap; }
+  .img-crackers {
+    width: 30%;
+    height: 50%; }
+  .newsyredes-contenedor {
+    display: none; }
+  .workshops {
+    display: flex;
+    flex-wrap: wrap; } }
 
 @media screen and (max-width: 800px) {
   p {

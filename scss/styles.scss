@@ -8,41 +8,35 @@
     padding: 0;
     box-sizing: border-box;
   }
-
-  
-
   /*estilos en común del proyecto*/
-
 header{
+   background-color: $color-dos;
     .navbar-brand{
       font-family: "Shadows Into Light", "cursive";
       font-size: 1.3rem;
       font-weight: bold;
-    .nav-link{
-        font-size: 1rem;
-        font-size: 1.05rem;
-        font-family: "Open Sans", sans-serif;
-    .nav-link:hover{
-          transform: scale(1.05);
-      }
-    }
-  } 
+      background-color: $color-dos; }
+      .nav-link{
+        font-weight: bold;
+        background-color: $color-dos;
+        } 
+      .nav-link:hover{
+        transform: scale(1.05);
+      }       
 }
 main{ 
   h1{
-  height: 4.4rem;
+  height: 4rem;
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  padding-top: 0.5rem;
-  background-color: $color-uno;
+  background-color: $color-cuatro;
   text-shadow: 5px 5px 5px $color-cinco;}
-
   h3{
     font-size: 2.2rem;
     text-align: center;
     font-weight: bolder;
-    padding-top: 4px;
+    padding-top: 0.3rem;
     font-family:"Shadows Into Light", "cursive";
   }
   .newsyredes-contenedor {
@@ -80,7 +74,6 @@ main{
       }
   }
  }
-
 footer {
   height: 4rem;
   display: flex;
@@ -91,11 +84,8 @@ footer {
   background-color: $color-dos;
   font-weight: bold;
 }
-
 /*estilos del index*/
-
 main{
-
 .img-y-p-index{
   height:37rem ;
   margin: 1rem 3rem 4rem 3rem;
@@ -132,7 +122,7 @@ display: flex;
 .sobremi-parrafo{
   margin: 0.6rem;
   color: $color-cinco;
-  padding-top:  1rem;;
+  padding-top:  1.5rem;
   display: grid;
   font-size: 1.3rem; 
 }
@@ -155,7 +145,7 @@ main{
   .healthy{
     background-color: $color-tres;
     margin: 1rem;
-    padding-top: 0.5rem;
+    padding-top: 0.4rem;
     color: $color-cinco;
     text-shadow: 2px 2px 2px $color-seis;
     height: 3rem;
@@ -164,8 +154,7 @@ main{
   }
   .contenido-contenedor {
     display: grid;
-    justify-content: center;
-    text-align:justify;
+    @extend %estilospages;
     margin: 2rem;
     font-size: 1.1rem;}
 
@@ -174,52 +163,25 @@ main{
   border-radius: 2.5rem;
   margin: 1rem;
   }
-  
   .healthy-contenedor{
   @include medidas (75rem , 55rem);
   display: flex;
-  justify-content: center;
+  @extend %estilospages;
   justify-items: center;
-  text-align:justify;
   padding: 1rem;
   }
-  .mindfuleating-contenedor{
-    justify-content: center;
-    height: 140vh;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    .puntosesenciales{
-      font-weight: bold;
-      background-color:$color-tres;
-      color: $color-cinco;
-      text-shadow: 2px 2px 2px $color-seis;
-      text-align: center;
-      border-radius: 2.5rem;
-      height: 3rem;
-      box-shadow: 2px 2px 2px $color-seis;
-      margin: 1rem;
-      }
-    .hijosmind{
-      font-weight: bold;
-      font-size: 1.1rem;
-      border-radius: 2.5rem;
-      box-shadow: 2px 2px 2px $color-seis;
-      height: 4rem;
-      padding: 0.6rem;
-      text-align: center;
+  .puntosesenciales{
+    font-weight: bold;
+    padding-top: 0.5rem;
+    background-color:$color-tres;
+    color: $color-cinco;
+    text-shadow: 2px 2px 2px $color-seis;
+    text-align: center;
+    border-radius: 2.5rem;
+    height: 3rem;
+    box-shadow: 2px 2px 2px $color-seis;
+    margin: 1rem;
     }
-    .hijosmind:hover{
-      transform: scale(1.1);
-    }
-    .one{
-      background-color: $color-cuatro;
-      @extend %estilosMindful ;
-    }
-    .two {
-      background-color: $color-uno;
-      @extend %estilosMindful ;
-    }
-  }
   .prebioticos-contenedor {
   height: 150vh;
   display: grid;
@@ -240,14 +202,12 @@ main{
         to{
             transform: scale(0.95);
         }
-  
         from{
             transform: scale(1.2);
         }
     }
 }
 }
-
 /*estilos page-2*/
 main{
   .subtitulos main
@@ -257,8 +217,7 @@ main{
 .contenidorecetas-contenedor{
   margin: 1.5rem;
   padding-top: 1.5rem;
-  text-align:justify;
-  justify-content: center;
+  @extend %estilospages;
   justify-items: center;
   ul li {
     list-style: none;
@@ -273,7 +232,6 @@ section{
   }
 }
 }
-
 /*estilos page-3*/
 main{
 .workshops{
@@ -296,10 +254,8 @@ main{
            }
   }
   }
-}
-   
+}  
 /*estilos page-4*/
-
 main{
 .contacto-contenedor {
   display: grid;
@@ -333,52 +289,65 @@ main{
   }  
 }
 }
-
 @media screen and(max-width:412px){
-
 h1{
   display: none;
 }
 .subtitulo-index{
   display: none;
 }
+
 .img-y-p-index{
   display: flex;
   flex-direction: column;
+  font-size: 0.5rem;
 }
-
 .p-index{
   width: 300px;
   height: 200px;
-  font-size: 0.8rem;
-}
-.sobremi-contenedor{
-  display:flex;
-  flex-direction: column;
 }
 .img-juli{
-  width: 300px;
+  display: none;
 }
-
 .newsletter-contenedor{
   height: 200px;
 }
-.prebioticos-contenedor {
-  height: 150vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-}
-  .imgs-healthy{
+.imgs-healthy{
     width: 75%;
   }
-  footer{
+.healthy{
+    font-size: 0.5rem;
+  }
+  .mindfuleating-contenedor{
     display: none;
   }
+  .prebioticos-contenedor{
+    display: flex;
   }
-    
-  
+.img-index{
+    width: 50%;
+  }
+
+.contenidorecetas-contenedor{
+display: flex;
+flex-wrap: wrap;
+}
+
+.img-crackers{
+  width: 30%;
+  height: 50%;
+}
+
+.newsyredes-contenedor{
+  display: none;
+}
+
+.workshops{
+  display: flex;
+  flex-wrap: wrap;
+}
+}
+ 
 @media screen and(max-width:800px){
 
   p{
@@ -477,21 +446,17 @@ footer{
   }
 }
 
-  @media screen and (min-width: 1200px) {
-
-    
+@media screen and (min-width: 1200px) {
     .img-index:hover{
       animation-name: img-movimiento;
             animation-iteration-count: infinite;
             animation-duration: 2s;
             animation-direction:alternate-reverse;
         }
-    
         @keyframes img-movimiento {
             to{
                 transform: scale(1);
             }
-    
             from{
                 transform: scale(1.04);
             }
@@ -501,7 +466,6 @@ footer{
       margin-left: 0.5rem;
       margin-right: 1rem;
     }
-    
     .granola{
    margin-left: 0.5rem;
    margin-right: 1rem;
@@ -539,62 +503,52 @@ footer{
       width: 40rem;
       margin-right: 1.5rem;
     }
-    
     .granola{
       grid-area: granola;
       width: 40rem;
       margin-right: 1.5em;
     }
-    
     .lentejas{
       grid-area: lentejas;
       width: 40rem;
       margin-right: 2rem;
     }
-    
     .pestokale{
       grid-area: pestokale;
       width: 40rem;
       margin-right: 2rem;
     }
-  
     .img-crackers{
       margin-top: 1rem;
       filter: drop-shadow(5px 5px 5px);
       }
-    
       .img-granola{
         margin-top: 1rem;
         filter: drop-shadow(5px 5px 5px);
       }
-    
       .img-lentejas{
         margin-top: 1rem;
         filter: drop-shadow(5px 5px 5px);
       }
-    
       .img-pestokale{
         margin-top: 1rem;
         filter: drop-shadow(5px 5px 5px);
       }
-  
       .recetas:hover{
         transform: scale(0.95);
       }
-  
       .workshops{
         box-shadow: 2px 2px 5px black;
       }
-    
       .newsletter-index:hover {
       transform: scale(0.95);
     }
-
     .imgs-works:hover{
       transform: scale(0.95);
     }
-    
   }
+     
+
 
   
   
