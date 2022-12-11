@@ -81,19 +81,19 @@ footer {
 
 /*estilos del index*/
 main .img-y-p-index {
-  height: 37rem;
-  margin: 1rem 3rem 4rem 3rem;
+  height: 30rem;
+  margin: 1rem 3rem 2rem 3rem;
   display: flex;
   justify-content: center; }
   main .img-y-p-index .img-index {
-    margin: 1.2rem;
+    margin: 1rem;
     filter: drop-shadow(5px 5px 5px); }
   main .img-y-p-index .p-index {
     width: 19rem;
     height: 25rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    margin-left: 1.2rem;
+    margin-left: 1.4rem;
     text-align: center;
     font-family: "Shadows Into Light", "cursive";
     font-weight: bold;
@@ -182,7 +182,7 @@ main {
   to {
     transform: scale(0.95); }
   from {
-    transform: scale(1.2); } }
+    transform: scale(1.1); } }
 
 /*estilos page-2*/
 main .subtitulos main .recets {
@@ -221,7 +221,7 @@ main .workshops {
 
 /*estilos page-4*/
 main .contacto-contenedor {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
@@ -249,106 +249,121 @@ main .contacto-contenedor {
     box-shadow: 2px 2px 5px black;
     font-weight: bold; }
 
-@media screen and (max-width: 412px) {
-  h1 {
+@media screen and (max-width: 450px) {
+  main h1 {
+    font-size: 2rem;
+    height: 3rem; }
+  main .subtitulo-index {
     display: none; }
-  .subtitulo-index {
-    display: none; }
-  .img-y-p-index {
+  main .img-y-p-index {
     display: flex;
     flex-direction: column;
-    font-size: 0.5rem; }
-  .p-index {
-    width: 300px;
-    height: 200px; }
-  .img-juli {
-    display: none; }
-  .newsletter-contenedor {
-    height: 200px; }
-  .imgs-healthy {
-    width: 75%; }
-  .healthy {
-    font-size: 0.5rem; }
-  .mindfuleating-contenedor {
-    display: none; }
-  .prebioticos-contenedor {
-    display: flex; }
-  .img-index {
-    width: 50%; }
-  .contenidorecetas-contenedor {
-    display: flex;
-    flex-wrap: wrap; }
-  .img-crackers {
-    width: 30%;
+    justify-content: center;
+    align-items: center; }
+    main .img-y-p-index .p-index {
+      font-size: 1.2rem;
+      text-align: center;
+      width: 21rem;
+      margin: 1.2rem;
+      background-color: #e5c1c4;
+      box-shadow: 2px 2px 5px; }
+    main .img-y-p-index .img-index {
+      width: 60%;
+      margin-top: 1rem;
+      height: 60%; }
+  main .sobremi-contenedor {
     height: 50%; }
-  .newsyredes-contenedor {
+    main .sobremi-contenedor .sobremi-parrafo {
+      font-size: 0.8rem; }
+  main .img-juli {
     display: none; }
-  .workshops {
+  main .healthy {
+    font-size: 1.2rem; }
+  main .imgs-healthy {
+    width: 75%; }
+  main .prebioticos-contenedor {
+    display: none; }
+  main .contenidorecetas-contenedor {
     display: flex;
-    flex-wrap: wrap; } }
-
-@media screen and (max-width: 800px) {
-  p {
-    font-size: 0.85rem; }
-  .p-index {
-    width: 50%; }
-  .img-index {
-    width: 50%;
-    height: auto; }
-  .redsocial-contenedor {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .contenidorecetas-contenedor .img-crackers {
+      width: 85%; }
+    main .contenidorecetas-contenedor .img-granola {
+      width: 85%;
+      margin-right: 2rem; }
+    main .contenidorecetas-contenedor .img-lentejas {
+      width: 85%; }
+    main .contenidorecetas-contenedor .img-pestokale {
+      width: 85%; }
+    main .contenidorecetas-contenedor .crackers {
+      width: 85%; }
+    main .contenidorecetas-contenedor .granola {
+      width: 85%; }
+    main .contenidorecetas-contenedor .lentejas {
+      width: 85%; }
+    main .contenidorecetas-contenedor .pestokale {
+      width: 85%; }
+  main .newsyredes-contenedor {
     display: none; }
-  .imgs-healthy {
-    height: 16rem; }
-  .contenido-contenedor {
-    margin-top: 20rem; }
-  .hijosmind {
-    font-size: 0.85rem; }
-  .imgs-prebioticos {
-    height: 16rem; }
-  .imgs-prebioticos:hover {
-    box-shadow: 2px 2px 3px #444242;
-    animation-name: img-movimiento;
-    animation-iteration-count: infinite;
-    animation-duration: 1.5s;
-    animation-direction: alternate-reverse; }
-  @keyframes img-movimiento {
-    to {
-      transform: scale(0.95); }
-    from {
-      transform: scale(1.1); } }
-  .healthy {
-    font-size: 1.5rem; }
-  ul li {
-    font-size: 0.85rem; }
-  .img-crackers {
-    margin-left: 8rem;
-    width: 32rem; }
-  .img-granola {
-    margin-left: 8rem;
-    width: 32rem; }
-  .img-lentejas {
-    margin-left: 8rem;
-    width: 32rem; }
-  .img-pestokale {
-    margin-left: 8rem;
-    width: 32rem; }
-  .crackers {
-    margin-left: 8rem;
-    margin-right: 7rem; }
-  .granola {
-    margin-left: 8rem;
-    margin-right: 7rem; }
-  .lentejas {
-    margin-left: 8rem;
-    margin-right: 7rem; }
-  .pestokale {
-    margin-left: 8rem;
-    margin-right: 7rem; }
+  main .workshops {
+    display: flex;
+    flex-direction: column;
+    height: 50%; }
+    main .workshops .imgs-works {
+      display: none; }
+  main .contacto-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem; }
+    main .contacto-contenedor .text-area {
+      width: 90%; }
   footer {
     display: none; } }
 
+@media screen and (min-width: 800px) {
+  main h3 {
+    font-size: 1.5rem; }
+  main .sobremi-contenedor .sobremi-parrafo {
+    font-size: 0.9rem; }
+  main .prebioticos-contenedor {
+    height: 60%; }
+    main .prebioticos-contenedor .imgs-prebioticos {
+      width: 70%;
+      margin: 1rem; }
+  main .contenidorecetas-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .contenidorecetas-contenedor .img-crackers {
+      width: 85%; }
+    main .contenidorecetas-contenedor .img-granola {
+      width: 85%;
+      margin-right: 2rem; }
+    main .contenidorecetas-contenedor .img-lentejas {
+      width: 85%; }
+    main .contenidorecetas-contenedor .img-pestokale {
+      width: 85%; }
+    main .contenidorecetas-contenedor .crackers {
+      width: 85%; }
+    main .contenidorecetas-contenedor .granola {
+      width: 85%; }
+    main .contenidorecetas-contenedor .lentejas {
+      width: 85%; }
+    main .contenidorecetas-contenedor .pestokale {
+      width: 85%; }
+  main .workshops .parrafos-works {
+    font-size: 1rem; }
+    main .workshops .parrafos-works .shadows {
+      font-size: 1.4rem; } }
+
 @media screen and (min-width: 1200px) {
-  .img-index:hover {
+  main h3 {
+    font-size: 2rem; }
+  main .img-index:hover {
     animation-name: img-movimiento;
     animation-iteration-count: infinite;
     animation-duration: 2s;
@@ -358,64 +373,51 @@ main .contacto-contenedor {
       transform: scale(1); }
     from {
       transform: scale(1.04); } }
-  .crackers {
-    margin-left: 0.5rem;
-    margin-right: 1rem; }
-  .granola {
-    margin-left: 0.5rem;
-    margin-right: 1rem;
-    margin-top: 4rem; }
-  .lentejas {
-    margin-left: 0.5rem;
-    margin-right: 1rem; }
-  .pestokale {
-    margin-left: 0.5rem;
-    margin-right: 1rem;
-    margin-top: 1.5rem; }
-  .contenidorecetas-contenedor {
+  main .sobremi-contenedor .sobremi-parrafo {
+    font-size: 1.2rem; }
+  main .newsletter-index:hover {
+    transform: scale(0.95); }
+  main .contenidorecetas-contenedor {
     margin: 1rem;
     padding-top: 0.5rem;
     text-align: justify;
-    justify-content: center;
-    justify-items: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 3fr 3fr 3fr 3fr;
     grid-template-areas: "crackers img-crackers" "granola img-granola" "lentejas img-lentejas" "pestokale img-pestokale"; }
-  .crackers {
+  main .crackers {
     grid-area: crackers;
-    width: 40rem;
-    margin-right: 1.5rem; }
-  .granola {
+    width: 40rem; }
+  main .granola {
     grid-area: granola;
-    width: 40rem;
-    margin-right: 1.5em; }
-  .lentejas {
+    width: 40rem; }
+  main .lentejas {
     grid-area: lentejas;
-    width: 40rem;
-    margin-right: 2rem; }
-  .pestokale {
+    width: 40rem; }
+  main .pestokale {
     grid-area: pestokale;
-    width: 40rem;
-    margin-right: 2rem; }
-  .img-crackers {
+    width: 40rem; }
+  main .img-crackers {
     margin-top: 1rem;
     filter: drop-shadow(5px 5px 5px); }
-  .img-granola {
+  main .img-granola {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    filter: drop-shadow(5px 5px 5px); }
+  main .img-lentejas {
     margin-top: 1rem;
     filter: drop-shadow(5px 5px 5px); }
-  .img-lentejas {
+  main .img-pestokale {
     margin-top: 1rem;
     filter: drop-shadow(5px 5px 5px); }
-  .img-pestokale {
-    margin-top: 1rem;
-    filter: drop-shadow(5px 5px 5px); }
-  .recetas:hover {
+  main .recetas:hover {
     transform: scale(0.95); }
-  .workshops {
+  main .workshops {
     box-shadow: 2px 2px 5px black; }
-  .newsletter-index:hover {
-    transform: scale(0.95); }
-  .imgs-works:hover {
+    main .workshops .parrafos-works {
+      font-size: 1.3rem; }
+      main .workshops .parrafos-works .shadows {
+        font-size: 1.8rem; }
+  main .imgs-works:hover {
     transform: scale(0.95); } }
