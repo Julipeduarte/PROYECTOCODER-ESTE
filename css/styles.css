@@ -286,7 +286,7 @@ main .contacto-contenedor {
     main .prebioticos-contenedor .imgs-prebioticos {
       width: 40%;
       height: 20%;
-      margin: 1.2rem; }
+      margin-left: 1.2rem; }
   main .contenidorecetas-contenedor {
     display: flex;
     flex-direction: column;
